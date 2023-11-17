@@ -6,6 +6,10 @@
         api_version: v1
         kind: Namespace
         host: https://api.crc.testing:6443
+    - sabre1041.eda.k8s:
+        api_version: v1
+        kind: Namespace
+        host: https://api.cluster-c8228.c8228.sandbox2536.opentlc.com:6443
   rules:
     - name: Set Resource Quotas to a Namespace
       condition: event.type == "ADDED"
