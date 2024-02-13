@@ -8,8 +8,8 @@
         host: "https://api.crc.testing:6443"
         #api_key: "sha256~token"
         validate_certs: no
-        label_selectors:
-          - tag=eda
+        #label_selectors:
+        #  - tag=eda
   rules:
     - name: Set Resource Quotas to a Namespace
       condition: event.type == "ADDED"
